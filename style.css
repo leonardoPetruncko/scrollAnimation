@@ -29,4 +29,21 @@ h1 {
     margin: 10px;
     border-radius: 10px;
     box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+
+    /*Translate*/
+    transform: translateX(200%);
+    transition: 0.4s ease;
+}
+
+.box h2 {
+    font-size: 45px;
+}
+
+/*Aleatoriamente a vinda dos box*/
+.box:nth-of-type(even) {
+    transform: translateX(-200%);
+}
+
+.box.show {
+    transform: translateX(0);
 }
